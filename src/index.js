@@ -10,7 +10,7 @@ function search(event) {
   // change the city and temperature information
   let apiKey = "fc0cfae3b133613dbc3178be6b4c1a4d";
 
-  let getCityCoordinatesAPI = `http://api.openweathermap.org/geo/1.0/direct?q=${cityValue}&limit=1&appid=${apiKey}`;
+  let getCityCoordinatesAPI = `https://api.openweathermap.org/geo/1.0/direct?q=${cityValue}&limit=1&appid=${apiKey}`;
   console.log(cityValue);
   function getCityWeather(response) {
     let cityName = response.data[0].name;
